@@ -3,20 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>ADgraphix - Graphic Design & Digital Printing</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(90deg, #333, #77aaff);
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: 3px solid #77aaff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            float: left;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #77aaff;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .service-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-box h3 {
+            margin-top: 0;
+            color: #444;
+        }
+
+        .service-box p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1, nav {
+                float: none;
+                text-align: center;
+            }
+
+            nav ul {
+                padding: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Simple HTML Page</h1>
+        <div class="container">
+            <h1>AdGraphix</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <p>This is a basic webpage example with simple content.</p>
-        <a href="https://www.example.com" target="_blank">Visit Example Website</a>
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>
+        From day one, our mission has been simple: to help your business succeed and grow. We specialize in web design, SEO, and digital marketing, tailoring our services to meet the specific needs of your business. Whether you're looking to revamp your website, improve search rankings, or boost your online marketing efforts, we’ve got you covered. With a focus on excellence, attention to detail, and competitive pricing, we’re dedicated to delivering unmatched value and results for your business.
+</p>
+</div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services-container">
+                <div class="service-box" id="link-building">
+                    <h3>Link Building</h3>
+                    <p>Boost your SEO with our premium backlink service! Improve your website’s rankings and take over search results with high-quality backlinks that drive traffic and strengthen your online presence.</p>
+                </div>
+
+                <div class="service-box" id="lead-generation">
+                    <h3>Lead Generation</h3>
+                    <p>Take your business to the next level with expert lead generation! We focus on finding and attracting high-quality leads that are ready to convert. Partner with us for real growth and success!</p>
+                </div>
+
+                <div class="service-box" id="seo-optimization">
+                    <h3>SEO Optimization</h3>
+                    <p>Increase your online visibility and drive conversions with our proven SEO strategies. Reach top search rankings and attract organic traffic. Get in touch to unlock your business’s full potential!</p>
+                </div>
+
+                <div class="service-box" id="web-development">
+                    <h3>Web Development</h3>
+                    <p>Enhance your online presence with our expert web development services. Build a sleek, user-friendly website that drives traffic and boosts conversions. Contact us to bring your business vision to life!</p>
+                </div>
+            </div>
+        </section>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="https://adgrapix.com" target="_blank">
+        <button style="background-color: #a31919; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s;">
+            Visit Now
+        </button>
+    </a>
+</div>
+<br><br><br><br>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+		<p>Website: <a href="https://adgrapix.com/contact">Adgrapix </a> ,  <a href="https://seontips.com">Seontips</a></p>
+		<p>Youtube: <a href="http://www.youtube.com/@Seontips">Seontips</a></p>
+                <p>Social: Instagram - @Adgrapix</p>
+                <p>Email: <a href="mailto:info@adgraphix.com">info@adgraphix.com</a></p>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Your Website</p>
+        <div class="container">
+            <p>&copy; 2025 AdGraphix. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
